@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Nikita Rajaneesh's website"
+title: "About me"
 author_profile: true
 redirect_from: 
   - /about/
@@ -11,6 +11,7 @@ I am completing the Advanced Master’s Research Program at Columbia University 
 
 I am passionate about building more trustworthy and resilient AI systems and am open to opportunities in applied AI research and engineering.
 
+Here's my [CV](/files/Nikita_Rajaneesh_CV.pdf)
 
 ## Research 
 
