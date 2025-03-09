@@ -13,9 +13,14 @@ I am passionate about building more trustworthy and resilient AI systems and am 
 
 Here's my [CV](/files/Nikita_Rajaneesh_CV.pdf)
 
-## Research 
+## Research
+
+### Towards Effective Discriminative Testing for Generative AI
 
 ### Unsupervised Domain Adaptation for Multimodal Large Language Models.
 
+## Work Experience 
 
-### Towards Effective Discriminative Testing for Generative AI 
+### Software Engineer, (AI/ML), Determined AI 
+
+### Software Engineer, Morningstar 
