@@ -40,7 +40,7 @@ We propose a novel unsupervised domain adaptation approach for
 improving generalization in Multimodal large language models. Instead of relying on extensive labeled datasets, our method leverages a weakly supervised auxiliary task to guide adaptation, allowing the model to refine its representations in new domains
 without requiring large amounts of high-quality annotations. Our algorithm aims to preserve the model’s rich pre-training knowledge while enhancing its ability to generalize to diverse, real-world tasks. 
 
-**Results so far**: Our method has shown a 5.6% improvement in accuracy in [GQA](https://cs.stanford.edu/people/dorarad/gqa/about.html) (QA on image scene graphs) dataset and a 2.6% improvement in accuracy in a medical dataset [VQA-Rad](https://paperswithcode.com/dataset/vqa-rad).
+**Results so far**: Our method has shown a 5.62% improvement in accuracy in [GQA](https://cs.stanford.edu/people/dorarad/gqa/about.html) (QA on image scene graphs) dataset and a 2.6% improvement in accuracy in a medical dataset [VQA-Rad](https://paperswithcode.com/dataset/vqa-rad).
 
 
 ## Work Experience 
@@ -62,6 +62,8 @@ February 2022 - June 2023
 ### Software Engineer, Morningstar 
 August 2020 - Feb 2022
 · Developed software (using vaderSentiment and spaCy) to perform Sentiment Analysis on fund reviews.
+
 · Developed an audit process (with AWS architecture) which collects metadata of tables in the Datalake.
+
 · Worked with AWS lambda, AWS Glue jobs and Spark to parse and write AWS s3 access and cloudtrail
 logs to parquet files.
