@@ -48,7 +48,7 @@ without requiring large amounts of high-quality annotations. Our algorithm aims 
 ### Software Engineer, (AI/ML), Determined AI 
 February 2022 - June 2023
 
-· Developed software to enable users to customize hyperparameter-tuning with Determined’s Deep Learn- ing platform. Designed the software to ensure fault tolerance and distributed computation. [Github commit](https://github.com/determined-ai/determined/commit/60e5fe145a6e4be9539b792535579f15340639ac)
+· Developed software to enable users to customize hyperparameter-tuning with Determined’s Deep Learning platform. Designed the software to ensure fault tolerance and distributed computation. [Github commit](https://github.com/determined-ai/determined/commit/60e5fe145a6e4be9539b792535579f15340639ac)
 
 · Developed a framework for an adversarial library toolkit that is integrable with deep learning platform.
 
