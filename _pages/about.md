@@ -22,7 +22,7 @@ Thomas P Zollo, **Nikita Rajaneesh**, Richard Zemel, Talia B. Gillis, and Emily 
 discrimination testing for generative AI. In ICLR 2025 Workshop on Building Trust in Language Models
 and Applications, 2025. 
 
-Full Paper [arXiv:2412.21052](https://arxiv.org/abs/2412.21052)
+Full Paper: [arXiv:2412.21052](https://arxiv.org/abs/2412.21052)
 
 [Github repository](https://github.com/thomaspzollo/dhacking)
 
@@ -61,6 +61,7 @@ February 2022 - June 2023
 
 ### Software Engineer, Morningstar 
 August 2020 - Feb 2022
+
 · Developed software (using vaderSentiment and spaCy) to perform Sentiment Analysis on fund reviews.
 
 · Developed an audit process (with AWS architecture) which collects metadata of tables in the Datalake.
