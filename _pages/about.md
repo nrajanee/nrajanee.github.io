@@ -48,15 +48,15 @@ without requiring large amounts of high-quality annotations. Our algorithm aims 
 ### Software Engineer, (AI/ML), Determined AI 
 February 2022 - June 2023
 
-· Developed software to enable users to customize hyperparameter-tuning with Determined’s Deep Learning platform. Designed the software to ensure fault tolerance and distributed computation. [Github commit](https://github.com/determined-ai/determined/commit/60e5fe145a6e4be9539b792535579f15340639ac)
+· Developed software to enable users to customize hyperparameter-tuning with Determined’s Deep Learning platform. Designed the software to ensure fault tolerance and distributed computation. ([github commit](https://github.com/determined-ai/determined/commit/60e5fe145a6e4be9539b792535579f15340639ac))
 
 · Developed a framework for an adversarial library toolkit that is integrable with deep learning platform.
 
-· Wrote Python SDK and Go API for user management and authentication for model registry. [Github commit 1](https://github.com/determined-ai/determined/commit/9a7c8b9ec7e8340352ca07e36f9e81b5132ee7c8), [Github commit 2](https://github.com/determined-ai/determined/commit/52d1111b82e9e6667bb8f37cd3c966e4b0cec3fc), [Github commit 3](https://github.com/determined-ai/determined/commit/1ae77fd5d6642f8a7837513f2688418222c4fc44), [Github commit 4](https://github.com/determined-ai/determined/commit/b279bb5b0e81336ff0be03a3307133fe52a1450b)
+· Wrote Python SDK and Go API for user management and authentication for model registry. ([github commit 1](https://github.com/determined-ai/determined/commit/9a7c8b9ec7e8340352ca07e36f9e81b5132ee7c8), [github commit 2](https://github.com/determined-ai/determined/commit/52d1111b82e9e6667bb8f37cd3c966e4b0cec3fc), [github commit 3](https://github.com/determined-ai/determined/commit/1ae77fd5d6642f8a7837513f2688418222c4fc44), [github commit 4](https://github.com/determined-ai/determined/commit/b279bb5b0e81336ff0be03a3307133fe52a1450b))
 
-· Built functionality to delete checkpoints saved during model training. [Github commit](https://github.com/determined-ai/determined/commit/42615b4b1730e40e2702d9ead5b2d31d88e31c0a)
+· Built functionality to delete checkpoints saved during model training. ([github commit](https://github.com/determined-ai/determined/commit/42615b4b1730e40e2702d9ead5b2d31d88e31c0a))
 
-· Built a tool to enable easy debugging of trials in model experiments. [Github commit](https://github.com/determined-ai/determined/commit/9032f67c1b9922e011d2104248f02a534733ccd6)
+· Built a tool to enable easy debugging of trials in model experiments. ([github commit](https://github.com/determined-ai/determined/commit/9032f67c1b9922e011d2104248f02a534733ccd6))
 
 
 ### Software Engineer, Morningstar 
