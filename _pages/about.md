@@ -24,7 +24,7 @@ and Applications, 2025.
 
 Full Paper [arXiv:2412.21052](https://arxiv.org/abs/2412.21052)
 
-[Github:](https://github.com/thomaspzollo/dhacking)
+[Github repository](https://github.com/thomaspzollo/dhacking)
 
 Generative AI (GenAI) models present new challenges in regulating against discriminatory behavior. In this paper, we argue that GenAI fairness research still has not met these challenges; instead, a significant gap remains between existing bias assessment methods and regulatory goals. Through four case studies, we demonstrate how this misalignment between fairness testing techniques and regulatory goals can result in discriminatory outcomes in real-world deployments, especially in adaptive or complex environments. We offer practical recommendations for improving discrimination testing to better align with regulatory goals and enhance the reliability of fairness assessments in future deployments.
 
@@ -34,7 +34,7 @@ Generative AI (GenAI) models present new challenges in regulating against discri
 
 [Paper:] Coming soon
 
-[Github:] Coming soon
+[Github] Coming soon
 
 We propose a novel unsupervised domain adaptation approach for
 improving generalization in Multimodal large language models. Instead of relying on extensive labeled datasets, our method leverages a weakly supervised auxiliary task to guide adaptation, allowing the model to refine its representations in new domains
