@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am completing the Advanced Master’s Research Program at Columbia University focused in AI/ML track advised by [Prof. Richard Zemel](https://scholar.google.com/citations?user=iBeDoRAAAAAJ&hl=en). My research focuses on AI robustness and safety, particularly in multi-modal large language models and their applications in fields such as healthcare. 
+I am completing the Advanced Master’s Research Program at Columbia University focused in AI/ML, advised by [Prof. Richard Zemel](https://scholar.google.com/citations?user=iBeDoRAAAAAJ&hl=en). My research focuses on AI robustness and safety, particularly in multi-modal large language models and their applications in fields such as healthcare. 
 
 After graduation, (in May 2025), I want to contribute to building more trustworthy and resilient AI systems. I am open to opportunities in applied AI research and engineering.
 
