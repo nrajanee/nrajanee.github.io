@@ -7,7 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-I am completing the Advanced Master’s Research Program at Columbia University focused in AI/ML, advised by [Prof. Richard Zemel](https://scholar.google.com/citations?user=iBeDoRAAAAAJ&hl=en). 
+
+
+Hi! My name is Nikita Rajaneesh. I am completing the Advanced Master’s Research Program at Columbia University focused in AI/ML, advised by [Prof. Richard Zemel](https://scholar.google.com/citations?user=iBeDoRAAAAAJ&hl=en). 
 I am broadly interested in responsible, robust, and safe AI. My research focuses on AI robustness and safety, particularly in multimodal large language models and their applications, including in healthcare.
 
 After graduation, (in May 2025), I want to contribute to building more trustworthy and resilient AI systems. I am open to opportunities in applied AI research and engineering.
@@ -16,7 +18,7 @@ Here's my [CV](/files/Nikita_Rajaneesh_CV.pdf).
 
 I've highlighted a few research projects and some work experience below. 
 
-## Research 
+# Research 
 
 ### Towards effective discrimination testing for generative AI
 Thomas P Zollo, **Nikita Rajaneesh**, Richard Zemel, Talia B. Gillis, and Emily Black. Towards effective
@@ -44,7 +46,7 @@ without requiring large amounts of high-quality annotations. Our algorithm aims 
 **Results so far**: Our method has shown a 5.62% relative improvement in accuracy in [GQA](https://cs.stanford.edu/people/dorarad/gqa/about.html) (QA on image scene graphs) dataset and a 2.6% relative improvement in accuracy in a medical dataset [VQA-Rad](https://paperswithcode.com/dataset/vqa-rad).
 
 
-## Work Experience 
+# Work Experience 
 
 ### Software Engineer, (AI/ML), Determined AI 
 February 2022 - June 2023
