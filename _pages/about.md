@@ -10,7 +10,8 @@ redirect_from:
 
 
 Hi! My name is Nikita Rajaneesh. I am completing the Advanced Master’s Research Program at Columbia University focused in AI/ML, advised by [Prof. Richard Zemel](https://scholar.google.com/citations?user=iBeDoRAAAAAJ&hl=en). 
-I am broadly interested in responsible, robust, and safe AI. My research focuses on AI robustness and safety, particularly in multimodal large language models and their applications, including in healthcare.
+
+I am broadly interested in responsible, robust, and safe AI. My research focuses on AI robustness and safety, particularly in multimodal large language models and their applications, including in healthcare. Additionally, I have been actively participating in Prof Zemel's Continual Learning working group. 
 
 After graduation, (in May 2025), I want to contribute to building more trustworthy and resilient AI systems. I am open to opportunities in applied AI research and engineering.
 
