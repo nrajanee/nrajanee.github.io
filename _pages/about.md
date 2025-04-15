@@ -23,8 +23,7 @@ I've highlighted a few research projects and some work experience below.
 
 ### Towards effective discrimination testing for generative AI
 Thomas P Zollo, **Nikita Rajaneesh**, Richard Zemel, Talia B. Gillis, and Emily Black. Towards effective
-discrimination testing for generative AI. In ICLR 2025 Workshop on Building Trust in Language Models
-and Applications, 2025. 
+discrimination testing for generative AI. In Fairness, Accountability and Transparency (FAccT), 2025. 
 
 Full Paper: [arXiv:2412.21052](https://arxiv.org/abs/2412.21052)
 
