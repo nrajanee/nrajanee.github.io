@@ -21,9 +21,9 @@ July 2025 - July 2026, New York, NY
 
 · Built a taxonomy of agent-behavior failure modes plus tooling to surface unique, high-signal errors and trace each back to targeted code-level fixes, tightening the debug loop for agent building.
 
-· Developed a novel NLP framework to adaptively generate scenarios from real conversations, increasing coverage of real errors by 15% for a leading education company.
+· Implemented MemAlign, a dual-memory method for aligning LLM judges to expert feedback, improving agreement with domain experts by 20%.
 
-· Implemented an ML algorithm that improves alignment of LLM judges to domain experts by 20%.
+· Shipped a novel NLP framework that adaptively generates test scenarios from real conversation logs, increasing coverage of real production errors by 15%.
 
 ### Machine Learning Researcher, Zgroup (Columbia University)
 September 2023 - May 2025, New York, NY
