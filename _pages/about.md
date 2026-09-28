@@ -55,8 +55,8 @@ Algorithmic fairness is an increasingly important aspect of algorithm design as 
 
 # Work Experience
 
-Most recently I've been a Machine Learning Research Engineer at Arklex.AI, working on
-automated agent evaluation. Before that I was a machine learning researcher in Prof. Richard
+I'm a Founding Research Engineer at Odva AI. Before that I was a Machine Learning Research
+Engineer at Arklex.AI, working on automated agent evaluation, and a machine learning researcher in Prof. Richard
 Zemel's group at Columbia, and a software engineer at Determined AI (HPE) and Morningstar.
 
 The full history — roles, education and skills — is on my [experience page](/experience/),

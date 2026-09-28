@@ -11,6 +11,8 @@ The short version is in my [CV](/files/Nikita_Rajaneesh_CV.pdf).
 
 # Work
 
+### Founding Research Engineer, Odva AI
+
 ### Machine Learning Research Engineer, Arklex.AI
 July 2025 - Present, New York, NY
 
