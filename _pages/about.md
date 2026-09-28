@@ -14,8 +14,6 @@ I'm a machine learning researcher and engineer with experience in agent and mode
 models, test-time adaptation and ML infrastructure (4+ years in industry and 3+ years in academia).
 {: .intro-lead}
 
-I'm actively looking for new roles focused on safe, robust and human-compatible AI. I am open to opportunities in applied AI research and engineering.
-
 I completed (May 2025) the Advanced Master’s Research Program at Columbia University focused in AI/ML, advised by [Prof. Richard Zemel](https://scholar.google.com/citations?user=iBeDoRAAAAAJ&hl=en). 
 
 Here's my [CV](/files/Nikita_Rajaneesh_CV.pdf).
