@@ -33,6 +33,3 @@ friends.
 6. Decentering men has been the greatest thing Gen Z women have done for
 themselves, and that's scary for everyone — including our parents, because we're
 not getting married to men who aren't aligned with us.
-
-7. I need to spend at least half the year in Bangalore by the end of 2026/2027.
-I'm making it happen.
