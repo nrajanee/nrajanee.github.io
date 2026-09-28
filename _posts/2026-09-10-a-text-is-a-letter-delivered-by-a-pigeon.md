@@ -1,6 +1,6 @@
 ---
 title: "A text is a letter delivered by a pigeon"
-date: 2026-09-27
+date: 2026-09-10
 permalink: /posts/2026/09/a-text-is-a-letter-delivered-by-a-pigeon/
 tags:
   - attention

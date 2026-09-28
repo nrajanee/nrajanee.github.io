@@ -1,7 +1,7 @@
 ---
 title: "A few things I keep coming back to"
-date: 2026-09-28
-permalink: /posts/2026/09/a-few-things-i-keep-coming-back-to/
+date: 2026-08-14
+permalink: /posts/2026/08/a-few-things-i-keep-coming-back-to/
 tags:
   - reflections
 ---
