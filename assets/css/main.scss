@@ -38,4 +38,8 @@
 @import "vendor/font-awesome/solid";
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
+
+// nature theme overrides (must come after the base theme)
+@import "nature";
+
 @import "print";

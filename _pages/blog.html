@@ -1,13 +1,23 @@
 ---
 layout: archive
-permalink: /year-archive/
-title: "Blog posts"
+permalink: /blog/
+title: "Blog"
 author_profile: true
 redirect_from:
+  - /year-archive/
   - /wordpress/blog-posts/
+  - /posts/
 ---
 
 {% include base_path %}
+
+<p class="page__lead">Notes on machine learning research, evaluation, and whatever else
+I'm thinking through — written mostly to make my own thinking clearer.</p>
+
+{% if site.posts.size == 0 %}
+  <p><em>No posts yet — the first one is on its way.</em></p>
+{% endif %}
+
 {% capture written_year %}'None'{% endcapture %}
 {% for post in site.posts %}
   {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}

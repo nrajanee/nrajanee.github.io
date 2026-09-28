@@ -1,0 +1,628 @@
+/* ==========================================================================
+   NATURE THEME
+   A woodland-inspired layer on top of the base theme: parchment canvas,
+   forest greens, soft botanical accents. Loaded last so it wins.
+   ========================================================================== */
+
+/* Decorative leaf sprig used for dividers and section headings */
+$leaf-svg: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%237f9c6a' stroke-width='1.6' stroke-linecap='round'%3E%3Cpath d='M12 22V8'/%3E%3Cpath d='M12 13c0-3 2.4-5.4 5.4-5.4C17.4 10.6 15 13 12 13z'/%3E%3Cpath d='M12 17c0-2.4-1.9-4.3-4.3-4.3C7.7 15.1 9.6 17 12 17z'/%3E%3Cpath d='M12 8c0-3.3 2.7-6 6-6 0 3.3-2.7 6-6 6z'/%3E%3C/svg%3E";
+
+/*
+   Canvas
+   ========================================================================== */
+
+body {
+  background-color: $background-color;
+  /* soft light filtering through a canopy */
+  background-image:
+    radial-gradient(60rem 40rem at 12% -8%, rgba(127, 156, 106, 0.16), transparent 70%),
+    radial-gradient(48rem 34rem at 92% 4%, rgba(61, 127, 150, 0.10), transparent 70%),
+    radial-gradient(52rem 40rem at 50% 100%, rgba(180, 105, 63, 0.07), transparent 72%);
+  background-repeat: no-repeat;
+}
+
+::selection {
+  background: rgba(127, 156, 106, 0.3);
+  color: $canopy-color;
+}
+
+/* visible keyboard focus everywhere */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid $secondary-color;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/*
+   Typography
+   ========================================================================== */
+
+h1, h2, h3, h4, h5, h6,
+.archive__item-title,
+.page__title,
+.archive__subtitle {
+  font-family: $serif;
+  color: $canopy-color;
+  letter-spacing: -0.005em;
+}
+
+/* Content typography is shared by .page__content (single layout) and the
+   archive layout's .archive wrapper (Blog, CV, Publications). */
+
+@mixin nature-section-heading {
+  margin-top: 2.5em;
+  padding-bottom: 0.4em;
+  font-size: $type-size-2;
+  border-bottom: 1px solid $border-color;
+
+  &:after {
+    content: "";
+    display: block;
+    width: 3.25rem;
+    height: 3px;
+    margin-top: 0.45em;
+    margin-bottom: -0.55em;
+    border-radius: 3px;
+    background: linear-gradient(90deg, $primary-color, $secondary-color);
+  }
+}
+
+@mixin nature-subheading {
+  position: relative;
+  margin-top: 1.9em;
+  padding-left: 0.85em;
+  font-size: $type-size-4;
+  line-height: 1.4;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.28em;
+    bottom: 0.18em;
+    width: 4px;
+    border-radius: 4px;
+    background: linear-gradient(180deg, $secondary-color, $primary-color);
+  }
+}
+
+@mixin nature-link {
+  color: $link-color;
+  text-decoration: underline;
+  text-decoration-color: rgba(127, 156, 106, 0.8);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
+  transition: color 0.2s ease-in-out, text-decoration-color 0.2s ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: $canopy-color;
+    text-decoration-color: $primary-color;
+    text-decoration-thickness: 2px;
+  }
+}
+
+.page__content {
+  p, li {
+    line-height: 1.7;
+  }
+
+  /* markdown "#" section headings, e.g. Research / Work Experience */
+  h1 {
+    @include nature-section-heading;
+  }
+
+  h2 {
+    margin-top: 2em;
+    font-size: $type-size-3;
+  }
+
+  /* project / role titles */
+  h3 {
+    @include nature-subheading;
+  }
+
+  a {
+    @include nature-link;
+  }
+
+  blockquote {
+    margin: 2em 0;
+    padding: 0.25em 1.5em;
+    border-left: 4px solid $secondary-color;
+    background: rgba(245, 242, 232, 0.7);
+    border-radius: 0 $border-radius $border-radius 0;
+    font-family: $serif;
+    color: mix(#000, $gray, 45%);
+  }
+
+  hr {
+    position: relative;
+    height: 1px;
+    margin: 3em 0;
+    border: 0;
+    background: linear-gradient(90deg, transparent, $border-color 15%, $border-color 85%, transparent);
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 22px;
+      height: 22px;
+      transform: translate(-50%, -50%);
+      background: $background-color url($leaf-svg) center / 18px 18px no-repeat;
+    }
+  }
+}
+
+/* direct children only, so post cards and year headings keep their own look */
+.archive {
+  > p,
+  > ul li {
+    line-height: 1.7;
+  }
+
+  > h1:not(.page__title) {
+    @include nature-section-heading;
+  }
+
+  > h3 {
+    @include nature-subheading;
+  }
+
+  > p a,
+  > ul li a,
+  > ol li a {
+    @include nature-link;
+  }
+}
+
+/* inline code + code blocks on parchment */
+code,
+pre {
+  font-family: $monospace;
+}
+
+.page__content {
+  code {
+    padding: 0.15em 0.4em;
+    background: $parchment-color;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+  }
+
+  /* keep syntax-highlighted blocks flat */
+  pre code,
+  .highlight code {
+    padding: 0;
+    background: none;
+    border: 0;
+  }
+
+  pre,
+  .highlight,
+  div.highlighter-rouge {
+    border-radius: $border-radius;
+  }
+
+  table {
+    border-radius: $border-radius;
+    overflow: hidden;
+
+    th {
+      background: $parchment-color;
+      color: $canopy-color;
+      border-bottom: 2px solid $secondary-color;
+    }
+  }
+}
+
+/* opening paragraph of the home page */
+.intro-lead {
+  font-family: $serif;
+  font-size: $type-size-4;
+  line-height: 1.65;
+  color: mix(#000, $gray, 45%);
+
+  @include breakpoint($medium) {
+    font-size: $type-size-3;
+    line-height: 1.55;
+  }
+}
+
+/*
+   Masthead + navigation
+   ========================================================================== */
+
+.masthead {
+  background: rgba(253, 252, 248, 0.88);
+  -webkit-backdrop-filter: saturate(140%) blur(10px);
+          backdrop-filter: saturate(140%) blur(10px);
+  border-bottom: 1px solid $border-color;
+  box-shadow: 0 1px 12px rgba(30, 68, 51, 0.05);
+
+  /* a thin canopy stripe along the very top */
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, $canopy-color, $primary-color 35%, $secondary-color 70%, $accent-color);
+  }
+}
+
+.greedy-nav {
+  background: transparent;
+
+  a {
+    font-family: $sans-serif;
+    font-size: $type-size-5;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    color: mix(#000, $gray, 45%);
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  .visible-links {
+    li:first-child a {
+      font-family: $serif;
+      font-size: $type-size-4;
+      font-weight: 600;
+      color: $canopy-color;
+
+      /* a small leaf beside the name */
+      &:after {
+        content: "";
+        display: inline-block;
+        width: 0.85em;
+        height: 0.85em;
+        margin-left: 0.4em;
+        vertical-align: -0.1em;
+        background: url($leaf-svg) center / contain no-repeat;
+      }
+    }
+
+    a:before {
+      height: 3px;
+      border-radius: 3px;
+      background: linear-gradient(90deg, $secondary-color, $primary-color);
+    }
+  }
+
+  button {
+    background-color: $primary-color;
+    border-radius: $border-radius;
+  }
+
+  .hidden-links {
+    background: $background-color;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+    box-shadow: 0 6px 18px rgba(30, 68, 51, 0.12);
+  }
+}
+
+/*
+   Sidebar author card
+   ========================================================================== */
+
+.sidebar .author__content,
+.sidebar .author__urls-wrapper,
+.sidebar .author__avatar {
+  text-align: left;
+}
+
+.author__avatar img {
+  border-radius: 50%;
+
+  @include breakpoint($large) {
+    padding: 6px;
+    border: 1px solid rgba(127, 156, 106, 0.55);
+    background: $background-color;
+    box-shadow: 0 6px 20px rgba(30, 68, 51, 0.1);
+  }
+}
+
+.author__name {
+  font-family: $serif;
+  font-size: $type-size-3;
+  color: $canopy-color;
+}
+
+.author__pronouns,
+.author__bio {
+  color: mix(#000, $gray, 30%);
+}
+
+.author__urls-wrapper {
+  button {
+    border-radius: 2em;
+    border: 1px solid $primary-color;
+    color: $primary-color;
+    background: transparent;
+
+    &:hover {
+      background: $primary-color;
+      color: #fff;
+    }
+  }
+}
+
+.author__urls {
+  @include breakpoint($large) {
+    padding: 1em 0.75em;
+    background: rgba(245, 242, 232, 0.6);
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+  }
+
+  li {
+    padding: 0.35em 0;
+    border-bottom: 1px solid rgba(224, 226, 214, 0.7);
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  a {
+    color: mix(#000, $gray, 45%);
+    text-decoration: none;
+    transition: $global-transition;
+
+    &:hover {
+      color: $primary-color;
+      text-decoration: none;
+      padding-left: 0.2em;
+    }
+  }
+
+  .fas,
+  .fab,
+  .far,
+  .ai {
+    color: $secondary-color;
+  }
+}
+
+/*
+   Page header
+   ========================================================================== */
+
+.page__title {
+  font-size: $type-size-1;
+  line-height: 1.2;
+}
+
+.page__lead {
+  font-family: $serif;
+  color: mix(#000, $gray, 35%);
+}
+
+.page__meta,
+.page__date {
+  color: mix(#000, $gray, 20%);
+
+  .fas,
+  .fa {
+    color: $secondary-color;
+  }
+}
+
+/*
+   Archives: blog list, publications, talks
+   ========================================================================== */
+
+.archive__subtitle {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 2.5em;
+  padding-bottom: 0;
+  font-size: $type-size-3;
+  color: $primary-color;
+  border-bottom: 0;
+
+  &:after {
+    content: "";
+    flex: 1 1 auto;
+    height: 1px;
+    background: linear-gradient(90deg, $border-color, transparent);
+  }
+}
+
+.list__item .archive__item,
+.grid__item .archive__item {
+  position: relative;
+  margin-bottom: 1.5em;
+  padding: 1.5em 1.5em 1.25em;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid $border-color;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(30, 68, 51, 0.04);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+
+  /* mossy edge that grows on hover */
+  &:before {
+    content: "";
+    position: absolute;
+    top: 1.25em;
+    bottom: 1.25em;
+    left: -1px;
+    width: 3px;
+    border-radius: 3px;
+    background: linear-gradient(180deg, $secondary-color, $primary-color);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    border-color: rgba(127, 156, 106, 0.6);
+    box-shadow: 0 10px 24px rgba(30, 68, 51, 0.09);
+
+    &:before {
+      opacity: 1;
+    }
+  }
+}
+
+.archive__item-title {
+  margin-top: 0;
+  font-size: $type-size-4;
+
+  a {
+    color: $canopy-color;
+    text-decoration: none;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+.archive__item-excerpt {
+  color: mix(#000, $gray, 35%);
+  font-size: $type-size-5;
+  line-height: 1.65;
+}
+
+/* date / read-time lines inside cards read as small labels */
+.list__item .archive__item .page__date,
+.list__item .archive__item .page__meta {
+  margin: 0.2em 0 0.6em;
+  font-family: $sans-serif;
+  font-size: $type-size-6;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: mix(#000, $gray, 15%);
+}
+
+/*
+   Taxonomy chips (tags, categories)
+   ========================================================================== */
+
+.page__taxonomy-item {
+  padding: 0.3em 0.75em;
+  border: 1px solid rgba(127, 156, 106, 0.55);
+  border-radius: 2em;
+  color: $primary-color;
+  background: rgba(245, 242, 232, 0.75);
+  text-decoration: none;
+
+  &:hover {
+    background: $primary-color;
+    border-color: $primary-color;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+/*
+   Buttons + notices
+   ========================================================================== */
+
+.btn {
+  border-radius: 2em;
+  font-family: $sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  transition: $global-transition;
+
+  &:hover {
+    transform: translateY(-1px);
+  }
+}
+
+.btn--primary {
+  background-color: $primary-color;
+}
+
+.notice,
+.notice--primary,
+.notice--info,
+.notice--success,
+.notice--warning,
+.notice--danger {
+  border-radius: $border-radius;
+}
+
+/*
+   Footer
+   ========================================================================== */
+
+.page__footer {
+  position: relative;
+  margin-top: 4em;
+  background-color: $canopy-color;
+  background-image: linear-gradient(180deg, $primary-color, $canopy-color);
+  border-top: 0;
+  color: rgba(245, 242, 232, 0.8);
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, $accent-color, $secondary-color 30%, $primary-color 65%, $canopy-color);
+  }
+
+  a {
+    color: rgba(245, 242, 232, 0.92);
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  .fas,
+  .fab,
+  .far,
+  .fal {
+    color: rgba(245, 242, 232, 0.75);
+  }
+}
+
+.page__footer-follow {
+  .social-icons a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.page__footer-copyright {
+  color: rgba(245, 242, 232, 0.65);
+}
+
+/*
+   Motion preferences
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *:before,
+  *:after {
+    animation-duration: 0.001ms !important;
+    animation-delay: 0ms !important;
+    transition-duration: 0.001ms !important;
+  }
+
+  .list__item .archive__item:hover,
+  .btn:hover {
+    transform: none;
+  }
+}

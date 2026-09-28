@@ -8,10 +8,10 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : #"Nikita Rajaneesh's website"
+title                    : "Nikita Rajaneesh"
 title_separator          : "-"
 name                     : &name "Nikita Rajaneesh"
-description              : &description "Hi I'm nikita"
+description              : &description "Nikita Rajaneesh - machine learning researcher and engineer working on agent and model evaluation, multimodal models, and robust AI."
 url                      : https://nrajanee.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "nrajanee/nrajanee.github.io"

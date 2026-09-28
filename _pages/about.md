@@ -12,6 +12,7 @@ redirect_from:
 Hi! My name is Nikita Rajaneesh. 
 I'm a machine learning researcher and engineer with experience in agent and model evaluation, multimodal
 models, test-time adaptation and ML infrastructure (4+ years in industry and 3+ years in academia).
+{: .intro-lead}
 
 I'm actively looking for new roles focused on safe, robust and human-compatible AI. I am open to opportunities in applied AI research and engineering.
 
@@ -19,7 +20,7 @@ I completed (May 2025) the Advanced Master’s Research Program at Columbia Univ
 
 Here's my [CV](/files/Nikita_Rajaneesh_CV.pdf).
 
-I've highlighted a few research projects and some work experience below. 
+I've highlighted a few research projects below — my full [experience](/experience/) is on its own page.
 
 # Research 
 
@@ -52,56 +53,11 @@ Manuscript: [On Equalized Odds in Supervised Learning](/files/equalizedodds_ced.
 Algorithmic fairness is an increasingly important aspect of algorithm design as algorithms play an increasing role in society. There are many competing notions of algorithmic fairness and here we consider a well studied notion called equalized odds. For a given classification problem, equalized odds requires the amount of false positive error to be equal across demographics and the amount of true positive error to be equal across demographics. Foundational work by Hardt, Price, and Srebro considers the problem of taking an existing classifier or a rating system as a black box and deriving another classifier satisfying equalized odds and otherwise minimizing the error. They gave a polynomial time algorithm that produces a fairly simple classifier that is optimal (in a particular sense, with respect to a given loss function) among those that satisfy equalized odds. In this work, we further the research direction of Hardt, Price, and Srebro and in particular we consider the same problem for the special and canonical case of algorithmic scoring systems that exhibit non-decreasing conditional event probabilities. Non-decreasing conditional event probabilities is a natural property inherent to reasonable scoring systems. We show that for scoring systems with non-decreasing event probabilities the optimal derived classifier can always be obtained by an extremely simple, randomized one-threshold classifier, which involves only a single threshold for each demographic. Moreover, the optimal randomized one-threshold classifier can be computed efficiently. Given the ubiquity of non-decreasing conditional event probabilities, constructing such a radically simple mechanism to achieve equalized odds, that is also optimal among those that achieve equalized odds, is valuable from the perspective of transparency. It gives interesting structural insight into equalized odds in general, which we also discuss.
 
 
-# Work Experience 
+# Work Experience
 
-### Machine Learning Research Engineer, Arklex.AI 
-July 2025 - Present, New York, NY
+Most recently I've been a Machine Learning Research Engineer at Arklex.AI, working on
+automated agent evaluation. Before that I was a machine learning researcher in Prof. Richard
+Zemel's group at Columbia, and a software engineer at Determined AI (HPE) and Morningstar.
 
-· Own the end-to-end agent evaluation component of the flagship product, covering scenario design, conversation simulation, and automated agent evaluation, turning ad-hoc agent testing into a systematic, repeatable evaluation framework.
-
-· Built a taxonomy of agent-behavior failure modes plus tooling to surface unique, high-signal errors and trace each back to targeted code-level fixes, tightening the debug loop for agent building.
-
-· Developed a novel NLP framework to adaptively generate scenarios from real conversations, increasing coverage of real errors by 15% for a leading education company.
-
-· Implemented an ML algorithm that improves alignment of LLM judges to domain experts by 20%.
-
-
-### Software Engineer, (AI/ML), Determined AI (HPE company) 
-February 2022 - June 2023, Chicago, IL
-
-· Developed software to enable users to customize hyperparameter-tuning with Determined’s Deep Learning platform. Designed the software to ensure fault tolerance and distributed computation. ([github commit](https://github.com/determined-ai/determined/commit/60e5fe145a6e4be9539b792535579f15340639ac))
-
-· Developed a framework for an adversarial library toolkit that is integrable with deep learning platform.
-
-· Wrote Python SDK and Go API for user management and authentication for model registry. ([github commit 1](https://github.com/determined-ai/determined/commit/9a7c8b9ec7e8340352ca07e36f9e81b5132ee7c8), [github commit 2](https://github.com/determined-ai/determined/commit/52d1111b82e9e6667bb8f37cd3c966e4b0cec3fc), [github commit 3](https://github.com/determined-ai/determined/commit/1ae77fd5d6642f8a7837513f2688418222c4fc44), [github commit 4](https://github.com/determined-ai/determined/commit/b279bb5b0e81336ff0be03a3307133fe52a1450b))
-
-· Built functionality to delete checkpoints saved during model training. ([github commit](https://github.com/determined-ai/determined/commit/42615b4b1730e40e2702d9ead5b2d31d88e31c0a))
-
-· Built a tool to enable easy debugging of trials in model experiments. ([github commit](https://github.com/determined-ai/determined/commit/9032f67c1b9922e011d2104248f02a534733ccd6))
-
-
-### Software Engineer, Morningstar 
-August 2020 - Feb 2022, Chicago, IL
-
-· Developed software (using vaderSentiment and spaCy) to perform Sentiment Analysis on fund reviews.
-
-· Developed an audit process (with AWS architecture) which collects metadata of tables in the Datalake.
-
-· Worked with AWS lambda, AWS Glue jobs and Spark to parse and write AWS s3 access and cloudtrail
-logs to parquet files.
-
-
-### Software Engineering Intern, Morningstar 
-June 2019 - August 2019, Chicago, IL
-
-· Developed software that allows users to do analytics on the usage data of the Datalake.
-
-· Developed software that helps users get access to the glue catalog in the Datalake by using AWS Glue API and Apache Airflow.
-
-
-### Software Engineering Intern, Jobcase 
-June 2018 - August 2018, Boston, MA
-
-· Developed a "view history" functionality using Java Hibernate in an AngularJS web app called "Scheduler" to allow a user to record changes to a scheduled process.
-
-· Developed a regular expressions based approach to automatically populate job requirements' fields to reduce job search time for a user. Used ElasticSearch and developed a parsing tool in Java to test and analyze the proposed approach.
+The full history — roles, education and skills — is on my [experience page](/experience/),
+and the condensed version is in my [CV](/files/Nikita_Rajaneesh_CV.pdf).
