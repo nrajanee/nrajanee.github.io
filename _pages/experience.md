@@ -14,7 +14,7 @@ The short version is in my [CV](/files/Nikita_Rajaneesh_CV.pdf).
 ### Founding Research Engineer, Odva AI
 
 ### Machine Learning Research Engineer, Arklex.AI
-July 2025 - Present, New York, NY
+July 2025 - July 2026, New York, NY
 
 · Own automated agent evaluation within the flagship product's end-to-end pipeline (scenario design → conversation simulation → evaluation), turning ad-hoc agent testing into a repeatable framework.
 
